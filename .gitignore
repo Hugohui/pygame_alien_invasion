@@ -1,0 +1,7 @@
+# Editor
+idea
+vscode
+__pycache__
+
+# Env
+venv
