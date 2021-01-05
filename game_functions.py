@@ -30,6 +30,9 @@ def check_play_button(play_button, mouse_x, mouse_y, ai_settings, stats, screen,
         create_fleet(ai_settings, screen, ship, aliens)
         ship.center_ship()
 
+        # 重置游戏设置
+        ai_settings.initialize_dynamic_settings()
+        # 光标隐藏
         pygame.mouse.set_visible(False)
 
 
@@ -83,6 +86,7 @@ def check_bullet_alien_collisions(ai_settings, screen, ship, aliens, bullets):
 
     if len(aliens) == 0:
         bullets.empty()
+        ai_settings.increase_speed()
         create_fleet(ai_settings, screen, ship, aliens)
 
 
