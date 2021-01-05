@@ -13,7 +13,7 @@ class Settings(object):
 
         # 子弹设置
         self.bullet_speed_factor = 3
-        self.bullet_wihth = 1200
+        self.bullet_wihth = 3
         self.bullet_height = 15
         self.bullet_color = 60, 60, 60
         self.bullets_allowed = 3
